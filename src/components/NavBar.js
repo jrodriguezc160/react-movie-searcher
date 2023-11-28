@@ -9,23 +9,23 @@ export default function NavBar(props) {
   };
 
   return (
-    <div className='navbar-wrap'>
-      <div className='navbar'>
+    <div className="navbar-wrap">
+      <div className="navbar">
         <ul>
           <li onClick={() => window.innerWidth < 862 && toggleVisibility()}>
             {window.innerWidth < 862 ? (
               <a>
                 <img
-                  src='/src/assets/logo512.png'
-                  alt='react-logo'
+                  src="../assets/logo512.png"
+                  alt="react-logo"
                   style={{ width: '16px', height: '16px' }}
                 />
               </a>
             ) : (
-              <a href='/index.html'>
+              <a href="/index.html">
                 <img
-                  src='/logo512.png'
-                  alt='react-logo'
+                  src={process.env.PUBLIC_URL + "/logo512.png"}
+                  alt="react-logo"
                   style={{ width: '16px', height: '16px' }}
                 />
               </a>
@@ -33,14 +33,14 @@ export default function NavBar(props) {
           </li>
 
           <li className={`hideable ${isHidden ? 'hidden' : ''}`}>
-            <a href='../../public/index.html'>Inicio</a>
+            <a href="../../public/index.html">Inicio</a>
           </li>
 
           <li className={`hideable ${isHidden ? 'hidden' : ''}`}>
             <a
-              href='https://github.com/jrodriguezc160'
-              target='_blank'
-              rel='noreferrer'
+              href="https://github.com/jrodriguezc160"
+              target="_blank"
+              rel="noreferrer"
             >
               GitHub
             </a>
@@ -48,19 +48,19 @@ export default function NavBar(props) {
 
           <li className={`hideable ${isHidden ? 'hidden' : ''}`}>
             <a
-              href='https://youtube.com/playlist?list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk&si=xMuFHd3DRzHfmupu'
-              target='_blank'
-              rel='noreferrer'
+              href="https://youtube.com/playlist?list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk&si=xMuFHd3DRzHfmupu"
+              target="_blank"
+              rel="noreferrer"
             >
               Curso React
             </a>
           </li>
         </ul>
         <div className={`${isHidden ? 'search' : 'search on-vertical-menu'}`}>
-          <MovieSearchBox
-            searchValue={props.searchValue}
-            setSearchValue={props.setSearchValue}
-          />
+        <MovieSearchBox
+          searchValue={props.searchValue}
+          setSearchValue={props.setSearchValue}
+        />
         </div>
       </div>
     </div>
