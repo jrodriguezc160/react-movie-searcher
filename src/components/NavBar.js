@@ -16,7 +16,7 @@ export default function NavBar(props) {
             {window.innerWidth < 862 ? (
               <a>
                 <img
-                  src="../assets/logo512.png"
+                  src="assets/logo512.png"
                   alt="react-logo"
                   style={{ width: '16px', height: '16px' }}
                 />
