@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import DarkTheme from './temaOscuro';
+import MoviesApp from './components/MoviesApp';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <DarkTheme btn=".dark-theme-btn" classDark="dark-mode" />
+      <div className="content-x-nomargin" style={{ marginTop: '4vh' }}>
+        <h1>Ejercicios con React</h1>
+        <hr />
+      </div>
+      <MoviesApp />
+    </>
   );
 }
 
