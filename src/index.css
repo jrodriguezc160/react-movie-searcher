@@ -973,4 +973,33 @@ BÚSQUEDA DE PELÍCULAS */
   button {
     min-width: 100px;
   }
+
+  @media (max-width: 862px) {
+    .modal {
+      width: 100vw;
+      margin-top: 0;
+    }
+
+    .top-info > .movie-item {
+      width: 75%;
+      height: auto;
+    }
+
+    .top-info > .movie-item > .ambilight {
+      min-width: 10vh;
+      width: fit-content;
+      height: auto;
+    }
+
+    .top-info > .movie-item > .ambilight > .light {
+      width: 100%;
+      height: auto;
+      opacity: 100%;
+    }
+
+    p, button {
+      font-size: 1.1rem;
+      line-height: 2rem;
+    }
+  }
 }
